@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8396699041868809701}
   - component: {fileID: 5506878254355539925}
   - component: {fileID: -1203194455071853783}
+  - component: {fileID: 1294445510915898659}
   m_Layer: 5
   m_Name: Cell
   m_TagString: Cell
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CellNumber: 0
   _gameManager: {fileID: 0}
+  ResetButton: {fileID: 0}
+--- !u!114 &1294445510915898659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993682948997178467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d522777a489454f853f45b2f48e1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

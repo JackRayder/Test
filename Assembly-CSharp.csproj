@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\ClearField.cs" />
     <Compile Include="Assets\Scripts\CreateCell.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Initialization.cs" />
     <Compile Include="Assets\Scripts\Round1.cs" />
     <Compile Include="Assets\Scripts\Round2.cs" />
     <Compile Include="Assets\Scripts\Round3.cs" />

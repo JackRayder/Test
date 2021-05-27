@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 namespace Test
 {
     public class GameManager : MonoBehaviour
     {
+        public Text _task;
         public List<Sprite> CellLetters;
         public List<Sprite> CellNumbers;
-        //public List<Sprite> NumbersSpare;
-        //public List<Sprite> LettersSpare;
         public ClearField _clearField;
         public CreateCell _createCell;
         public GameManager _gameManager;
@@ -27,13 +27,16 @@ namespace Test
 
         private void Start()
         {
-            //NumbersSpare = new List<Sprite>(CellNumbers);
-            //LettersSpare = new List<Sprite>(CellLetters);
             _round1.Round(_gameManager);
         }
         public void Restart()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        public void Task(string value)
+        {
+            _task.text = "Find " + value;
         }
     }
 }

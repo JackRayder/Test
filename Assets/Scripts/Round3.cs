@@ -24,6 +24,13 @@ namespace Test
             int i = 0;
             while (i++ < 9)
                 gameManager._createCell.Create(gameManager, Set, Letters, Numbers);
+
+            GameObject[] cells = GameObject.FindGameObjectsWithTag("Cell");
+
+            for (int q = 0; q < cells.Length; q++)
+            {
+                if (WinNumber == cells[q].GetComponent<Cell>().CellNumber) gameManager.Task(cells[q].GetComponent<Initialization>().value);
+            }
         }
     }
 }
