@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 namespace Test
 {
@@ -9,6 +10,8 @@ namespace Test
         public int CellNumber;
         public GameManager _gameManager;
         public GameObject ResetButton;
+        public Transform _mytransform;
+
         public void Check()
         {
             if (_gameManager.isRoundOne && CellNumber == _gameManager._round1.WinNumber)
